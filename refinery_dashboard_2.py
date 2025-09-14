@@ -19,7 +19,7 @@ st.set_page_config(
 # -------------------------
 @st.cache_data
 def load_data():
-    data = pd.read_csv("integrated_data.csv", parse_dates=["date"])
+    data = pd.read_csv("Integrated_data.csv", parse_dates=["date"])
     data.set_index("date", inplace=True)
     return data
 
@@ -271,3 +271,4 @@ st.download_button(
     "profit_forecast.csv",
     "text/csv"
 )
+
